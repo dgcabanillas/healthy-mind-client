@@ -9,6 +9,7 @@ const Header = () => {
         <li><NavLink to="/" exact> inicio </NavLink></li>
         <li><NavLink to="auth/login" exact> ingresar </NavLink></li>
         <li><NavLink to="auth/register" exact> registrar </NavLink></li>
+        <li><NavLink to="patientList" exact> lista pacientes </NavLink></li>
       </nav>
     </header>
   )
