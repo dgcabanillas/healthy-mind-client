@@ -15,6 +15,7 @@ const AppRouter = () => {
         <Route path="/user/doctor-profile" exact element={<DoctorProfile />} />
         <Route path="/auth/login" exact element={<Login />} />
         <Route path="/auth/register" exact element={<Register />} />
+   
         <Route path="*" exact element={<Page404 />} />
       </Routes>
     </BrowserRouter>
