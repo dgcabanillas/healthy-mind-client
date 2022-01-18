@@ -24,7 +24,7 @@ const Register = () => {
     height: 500,
 
   }
-  const loginRigthStyle = { background: 'gray', height: 600 }
+  const loginRigthStyle = { background: 'rgb(39,34,98)', height: 600, borderRadius:'10px'}
   return (
     <AuthLayout>
       <Grid item xs={24} justify="center" style={{ padding: 125 }}>

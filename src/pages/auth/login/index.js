@@ -22,7 +22,7 @@ const Login = () => {
     height: 500,
     
   }
-  const loginRigthStyle = { background: 'gray', height: 500 }
+  const loginRigthStyle = { background: 'rgb(39,34,98)', height: 500 }
   return (
     <AuthLayout>
       <Grid    item xs={24} justify = "center"  style={{padding:125}}>
