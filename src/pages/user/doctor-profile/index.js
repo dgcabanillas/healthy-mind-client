@@ -8,6 +8,7 @@ import CardLayout   from '../../../shared/CardLayout';
 import ItemM1       from '../../../shared/ItemM1';
 import UserBasicInformation from '../../../shared/UserBasicInformation';
 import { getUserInformation } from '../../../utils/api/getUserInformation';
+import CareerItem from '../../../shared/CareerItem';
 
 const DoctorProfile = () => {
   const doctor = getUserInformation({ userid: 1 });
@@ -53,8 +54,20 @@ const DoctorProfile = () => {
             </CardLayout>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <CardLayout title='Experiencia'></CardLayout>
-            <CardLayout title='Educación'></CardLayout>
+            <CardLayout title='Experiencia'>
+              <CardContent style={{ paddingTop: 0 }}>
+                <ul style={{ margin: 0, padding: 0 }}>
+                  { doctor.experience.map( item => <CareerItem key={item.id} data={item}/> )}
+                </ul>
+              </CardContent>
+            </CardLayout>
+            <CardLayout title='Educación'>
+              <CardContent style={{ paddingTop: 0 }}>
+                <ul style={{ margin: 0, padding: 0 }}>
+                  { doctor.education.map( item => <CareerItem key={item.id} data={item}/> )}
+                </ul>
+              </CardContent>
+            </CardLayout>
           </Grid>
         </Grid>
       </Container>
