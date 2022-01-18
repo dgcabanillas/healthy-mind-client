@@ -29,8 +29,7 @@ const Register = () => {
     <AuthLayout>
       <Grid item xs={24} justify="center" style={{ padding: 125 }}>
       <Grid justifyContent="flex-end">
-      <Button type='submit' variant='contained' justifyContent='center'     color='primary' fullWidth >Pacientes</Button>
-      <Button type='submit' variant='contained' justifyContent='center'  color='primary' fullWidth>Doctores</Button><br /><br />
+      
       </Grid>
 
         <Container maxWidth="md"   >
