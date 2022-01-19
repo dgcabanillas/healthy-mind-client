@@ -1,14 +1,7 @@
-import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import { blue } from '@mui/material/colors';
-import { AutoFixNormal } from '@mui/icons-material';
+import { IconButton } from '@mui/material';
 
 export const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -17,11 +10,14 @@ export const StyledTableCell = styled(TableCell)(({ theme }) => ({
     fontWeight: 600,
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.common.white,
+    
   },
+
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
     padding: 15,
     backgroundColor : '#F8F8F8',
+    
   },
 })); 
 
@@ -31,6 +27,7 @@ export const StyledTableCellGray = styled(TableCell)(({ theme }) => ({
       padding: 15,
       color: '#ADA5A5',
       backgroundColor : '#F8F8F8',
+      
     },
 })); 
 
@@ -65,4 +62,28 @@ export const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
+export const StyledButtonProfile = styled(IconButton)(({ theme }) => ({
+    backgroundColor: "#171819",
+    width: "40px",
+    height: "40px",
+    marginRight: "3px",
+}
+
+));
+
+export const StyledButtonEdit = styled(IconButton)(({ theme }) => ({
+    backgroundColor: theme.palette.primary.light,
+    width: "40px",
+    height: "40px",
+    marginRight: "3px",
+}
+)); 
+
+export const StyledButtonDelete = styled(IconButton)(({ theme }) => ({ 
+    backgroundColor: theme.palette.error.dark, 
+    width: "40px",
+    height: "40px",
+    marginRight: "3px",
+  }
+)); 
 

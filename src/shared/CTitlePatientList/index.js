@@ -1,15 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import Typography from '@mui/material/Typography';
-import { createTheme } from '@mui/system';
-
-const theme = createTheme({
-    palette: {
-      primary: {
-        main: '#66385C',
-        }
-    }
-});
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -23,7 +14,7 @@ const CTitlePatientList = ({ text }) => {
   return (
     <Typography
       component="h1" 
-      variant="h1" 
+      variant="h2" 
       color= "#8F8F90"
       className = {classes.title}
       gutterBottom

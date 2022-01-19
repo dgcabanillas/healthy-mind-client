@@ -30,3 +30,4 @@ const PatientImage = ({ image }) => {
 }
 
 export default PatientImage;
+
