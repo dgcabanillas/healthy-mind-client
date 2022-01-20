@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Card, CardMedia, Container, Grid, Toolbar, Typography } from '@mui/material';
-import HomeLayout   from '../../components/layouts/HomeLayout';
+import HomeLayout from '../../components/layouts/HomeLayout';
+import LandingCardsTop from '../../components/LandingCardsTop';
+import LandingCardsBottom from '../../components/LandingCardsBottom';
 
 const Home = () => {
   return (
@@ -33,6 +35,10 @@ const Home = () => {
           </Grid>
         </Grid>
       </Container>
+      <div style={{ background: '#bbbce9' }} className='py-4'>
+        <LandingCardsTop />
+        <LandingCardsBottom />
+      </div>
     </HomeLayout>
   )
 }

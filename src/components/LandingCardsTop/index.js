@@ -1,7 +1,8 @@
 import { Container, Grid } from '@mui/material';
 import * as React from 'react';
-import RecipeReviewCard from '../../components/PresentationCard';
+import RecipeReviewCard from '../PresentationCard';
 import styled from '@emotion/styled';
+import SectionTitle from '../../shared/SectionTitle';
 
 const Info = [
     {image : 'http://medic-app-react.next-item.com//content/user-40-3.jpg', text: 'Moderando los hábitos de las personas y conociendo sus costumbres se puede sanar' },
@@ -12,12 +13,12 @@ const Info = [
 const StyledContainer = styled(Container)(({ theme }) => ({ 
     minWidth: 800,
     maxWidth: 1100,
-    
 })); 
 
 function PagePresentationCardsTop(){
     return(
         <StyledContainer>
+            <SectionTitle text='Nuestros mentores' />
             <Grid container spacing={3}>
             {Info.map(Infos => (
                 <Grid item xs={12} sm={4}>

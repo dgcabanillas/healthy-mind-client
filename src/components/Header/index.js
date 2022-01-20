@@ -97,7 +97,11 @@ const Header = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button size='small' variant='contained'>Iniciar Sesion</Button>
+            <Link to='/auth/login'>
+              <Button size='small' variant='contained'>
+                Iniciar Sesion
+              </Button>
+            </Link>
           </Box>
         </Toolbar>
       </Container>

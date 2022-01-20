@@ -55,10 +55,11 @@ const Login = () => {
                   </Link>
                 </Typography><br/>
                 <Typography> ¿No tienes una cuenta?
-                  <Link href="register/" align="right">
-                    Registrar
+                  <Link href="/auth/register" align="right">
+                    {' registrar'}
                   </Link>
                 </Typography>
+                <Typography> Ir al <Link href="/" align="right"> inicio</Link></Typography>
               </Grid>
             </div>
           </Grid>

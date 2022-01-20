@@ -1,7 +1,8 @@
 import { Container, Grid } from '@mui/material';
 import * as React from 'react';
 import styled from '@emotion/styled';
-import RecipeReviewBottomCard from '../../components/bottomCard';
+import RecipeReviewBottomCard from '../bottomCard';
+import SectionTitle from '../../shared/SectionTitle';
 
 const Info = [
     {image : 'http://medic-app-react.next-item.com//content/user-40-3.jpg', tittle: 'Compromiso', text: 'Webbee is built to make your life easier. Variables, build tooling, documentation, and reusable components.' },
@@ -20,6 +21,7 @@ const StyledContainer = styled(Container)(() => ({
 function PagePresentationCardsBottom(){
     return(
         <StyledContainer>
+            <SectionTitle text='Nuestros valores' />
             <Grid container spacing={3}>
             {Info.map(Infos => (
                 <Grid item xs={12} sm={4}>
