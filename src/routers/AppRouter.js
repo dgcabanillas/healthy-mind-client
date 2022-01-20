@@ -5,7 +5,7 @@ import Login          from '../pages/auth/login';
 import Register       from '../pages/auth/register';
 import DoctorProfile  from '../pages/user/doctor-profile';
 import Page404        from '../pages/page404';
-import PatientList from '../pages/patientList';
+import PatientList    from '../pages/patientList';
 import DoctorList     from '../pages/user/doctor-list';
 
 const AppRouter = () => {

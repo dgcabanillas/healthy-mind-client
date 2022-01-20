@@ -13,6 +13,7 @@ import { IconButton } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
+import HomeLayout from '../../components/layouts/HomeLayout';
 
 const patients = [
   {image : 'http://medic-app-react.next-item.com//content/user-40-1.jpg', name : 'Gonzalo', id : '10021', age: '30', adress : '46 Pilgrim  Chevy Chase, MD 20816', number : '0126596452', lasVisit : '5 Dec 2020', status : 'Pending', action : 'actions'},
@@ -38,7 +39,7 @@ function PatientList(){
 
   const classesA = styles();
   return (
-    <div>       
+    <HomeLayout>       
       <Container>  
         
         <CTitlePatientList text = "Lista Pacientes"/>
@@ -103,7 +104,7 @@ function PatientList(){
         
       </Container>     
       
-    </div>    
+    </HomeLayout>    
   );
 }
 export default PatientList;
