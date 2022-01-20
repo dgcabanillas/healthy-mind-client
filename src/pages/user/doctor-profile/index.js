@@ -10,6 +10,7 @@ import UserBasicInformation from '../../../shared/UserBasicInformation';
 import { getUserInformation } from '../../../utils/api/getUserInformation';
 import CareerItem from '../../../shared/CareerItem';
 
+
 const DoctorProfile = () => {
   const doctor = getUserInformation({ userid: 1 });
 
