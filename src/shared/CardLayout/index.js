@@ -16,7 +16,6 @@ const CardLayout = ({ title, children }) => {
 
   return (
     <Card 
-      raised 
       elevation={5}
       className={classes.root}
     >

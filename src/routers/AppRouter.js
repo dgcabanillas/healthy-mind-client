@@ -6,6 +6,7 @@ import Register       from '../pages/auth/register';
 import DoctorProfile  from '../pages/user/doctor-profile';
 import Page404        from '../pages/page404';
 import PatientList from '../pages/patientList';
+import DoctorList     from '../pages/user/doctor-list';
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
         <Route path="/auth/login" exact element={<Login />} />
         <Route path="/auth/register" exact element={<Register />} />
         <Route path="/patientList" exact element={<PatientList />} />
+        <Route path="/user/doctor-list" exact element={<DoctorList/>} />
         <Route path="*" exact element={<Page404 />} />
       </Routes>
     </BrowserRouter>
