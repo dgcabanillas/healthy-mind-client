@@ -54,7 +54,7 @@ const Register = () => {
                   <Button type='submit' variant='contained' style={btnStyle} color='primary' fullWidth>Registrar</Button><br /><br />
               
                   <Typography> ¿Tu tienes una cuenta?
-                    <Link href="#" align="right">
+                    <Link href="login/" align="right">
                       Ingresar
                     </Link>
                   </Typography>

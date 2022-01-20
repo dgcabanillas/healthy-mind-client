@@ -57,9 +57,9 @@ const Login = () => {
                     ¿Te olvidaste tu contraseña?
                   </Link>
                 </Typography><br/>
-                <Typography> ¿Tu tienes una cuenta?
-                  <Link href="#" align="right">
-                    Ingresar
+                <Typography> ¿No tienes una cuenta?
+                  <Link href="register/" align="right">
+                    Registrar
                   </Link>
                 </Typography>
               </Grid>
