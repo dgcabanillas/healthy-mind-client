@@ -9,9 +9,6 @@ import { Typography } from '@mui/material';
 import { Link } from '@mui/material';
 import AuthLayout from "../../../components/layouts/AuthLayout";
 
-
-
-
 const Login = () => {
 
   const paperStyle = { padding: 10, height: '70vh', width: 280, margin: "90px auto " }
@@ -25,8 +22,8 @@ const Login = () => {
   const loginRigthStyle = { background: 'rgb(39,34,98)', height: 500 }
   return (
     <AuthLayout>
-      <Grid    item xs={24} justify = "center"  style={{padding:125}}>
-      <Container maxWidth="md"   >
+      <Grid item xs={24} justify="center" style={{padding:125}}>
+      <Container maxWidth="md">
         <Grid container spacing={0} > 
           <Grid item xs={12} md={5}>
             <div style={loginRigthStyle}></div>
