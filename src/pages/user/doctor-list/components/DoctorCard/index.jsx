@@ -5,6 +5,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
+import { Link } from 'react-router-dom';
+
 export const DoctorCard = ({ doctor }) => {
 
     const { name, images, shorDescription, socialNetworks, profession } = doctor;
@@ -54,7 +56,11 @@ export const DoctorCard = ({ doctor }) => {
                     </Typography>
                 </CardContent>
                 <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }} >
-                    <Button size='small' variant="contained" color="primary" >Ver Perfil </Button>
+                    <Link to='/user/doctor-profile'>
+                        <Button size='small' variant="contained" color="primary" > 
+                            Ver Perfil
+                        </Button>
+                    </Link>
                 </Box>
             </Card>
         </Grid>
